@@ -55,10 +55,10 @@ def show_versions(packs: dict[str, str]) -> None:
 
 def main() -> None:
     packs = {
-    "pandas": "Data manipulation ready",
-    "numpy": "Numerical computation ready",
-    "matplotlib": "Visualization ready"
-    }
+        "pandas": "Data manipulation ready",
+        "numpy": "Numerical computation ready",
+        "matplotlib": "Visualization ready"
+        }
     missing: list[str] = []
     print("LOADING STATUS: Loading programs...\n")
     print("Checking dependencies:")

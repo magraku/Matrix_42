@@ -6,6 +6,7 @@ import site
 def is_venv(pref: str, basepref: str) -> bool:
     return pref != basepref
 
+
 def in_matrix() -> None:
     venv = "Welcome to the construct"
     print(f"MATRIX STATUS: {venv}\n")
@@ -20,7 +21,7 @@ def in_matrix() -> None:
         "\nPackage installation path:\n"
         f"{elements[0]}"
     )
- 
+
 
 def out_matrix() -> None:
     venv = "You’re still plugged in"
@@ -38,11 +39,10 @@ def out_matrix() -> None:
         "matrix_env\\Scripts\\activate # On Windows\n"
         "\nThen run this program again."
     )
-    
+
+
 if __name__ == "__main__":
     if is_venv(sys.prefix, sys.base_prefix):
         in_matrix()
     else:
         out_matrix()
-        
-
