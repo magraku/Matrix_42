@@ -1,0 +1,21 @@
+[project]
+name = "matrix-loading"
+version = "0.1.0"
+description = "Matrix data analysis"
+authors = [
+    {name = "Maria Gracia"}
+]
+requires-python = ">=3.12"
+dependencies = [
+    "pandas (>=3.1.0,<4.0.0)",
+    "numpy (>=2.5.4,<3.0.0)",
+    "matplotlib (>=3.11.2,<4.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+package-mode = false
